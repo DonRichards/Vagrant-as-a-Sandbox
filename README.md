@@ -17,16 +17,19 @@ $ mv daily.sh ~/daily.sh
 ```
 
 ### Cron Schedule setup
-This sets it to run at 4AM. Replace "WhoAmI" with the username 
+_Replace "WhoAmI" with the username._ <br/>
+This sets it to run at 4AM and at reboot. 
 
 ```terminal
 #Export current crontab
 $ crontab -l > mycron
 #echo new crontab into file
 $ echo "0 4 * * * /home/WhoAmI/daily.sh" >> mycron
+$ echo "@reboot /home/WhoAmI/daily.sh" >> mycron
 #Install new crontab from file
 $ crontab mycron
 $ rm mycron
 ```
+
 ### Note:
 From time to time you'll want to delete or clear the date.log. It will continue to grow continuously. 
