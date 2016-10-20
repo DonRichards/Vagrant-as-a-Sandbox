@@ -1,5 +1,7 @@
-# Vagrant-as-a-Sandbox
-Script to run Vagrant as a sandbox
+# Script to run Vagrant as a Sandbox
+"A sandbox is a testing environment that isolates untested code changes and outright experimentation from the production environment or repository, in the context of software development including Web development and revision control." -Wikipedia
+
+![](https://cloud.githubusercontent.com/assets/2738244/19565319/6a729be0-96b4-11e6-9dee-27b62027e6b1.jpg)
 
 Schedule this script to run as a cron job Daily at `0 4 * * * daily.sh`
 
