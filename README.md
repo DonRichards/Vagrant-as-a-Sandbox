@@ -28,3 +28,5 @@ $ echo "0 4 * * * /home/WhoAmI/daily.sh" >> mycron
 $ crontab mycron
 $ rm mycron
 ```
+### Note:
+From time to time you'll want to delete or clear the date.log. It will continue to grow continuously. 
